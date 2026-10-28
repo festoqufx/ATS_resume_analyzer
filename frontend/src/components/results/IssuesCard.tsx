@@ -1,7 +1,7 @@
 'use client';
 
 import { ATSIssue } from '@/types';
-import { AlertTriangle, AlertCircle, Info, ChevronRight } from 'lucide-react';
+import { AlertTriangle, AlertCircle, Info } from 'lucide-react';
 
 interface IssuesCardProps {
   issues: ATSIssue[];

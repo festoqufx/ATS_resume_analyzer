@@ -121,7 +121,7 @@ export default function ContactSection() {
                 </div>
                 <h4 className="text-xl font-semibold text-gray-900 mb-2">Email Client Opened!</h4>
                 <p className="text-gray-600">
-                  Please send the email from your mail client. I'll get back to you soon!
+                  Please send the email from your mail client. I&apos;ll get back to you soon!
                 </p>
               </div>
             ) : (

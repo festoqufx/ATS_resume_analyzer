@@ -10,17 +10,8 @@ import {
   Phone,
   MapPin,
   Link2,
-  Target,
   Compass,
   Code2,
-  FolderKanban,
-  Briefcase,
-  GraduationCap,
-  AlertTriangle,
-  Lightbulb,
-  CheckCircle2,
-  XCircle,
-  TrendingUp,
   Loader2,
 } from 'lucide-react';
 import { AnalysisResult } from '@/types';
@@ -74,12 +65,6 @@ export default function ResultsDashboard({ results, onReset }: ResultsDashboardP
     } finally {
       setIsDownloading(false);
     }
-  };
-
-  const getScoreColor = (score: number) => {
-    if (score >= 80) return 'text-success-600';
-    if (score >= 60) return 'text-warning-600';
-    return 'text-danger-600';
   };
 
   const getScoreBgColor = (score: number) => {

@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import HowItWorks from '@/components/HowItWorks';
@@ -16,18 +16,12 @@ import BackendStatusBanner from '@/components/BackendStatusBanner';
 import { AnalysisResult } from '@/types';
 
 export default function Home() {
-  const [isVerified, setIsVerified] = useState(false);
+  const [isVerified, setIsVerified] = useState(
+    () => typeof window !== 'undefined' && sessionStorage.getItem('backend_verified') === 'true'
+  );
   const [isAnalyzing, setIsAnalyzing] = useState(false);
   const [results, setResults] = useState<AnalysisResult | null>(null);
   const [error, setError] = useState<string | null>(null);
-
-  // Check if user already verified in this session
-  useEffect(() => {
-    const verified = sessionStorage.getItem('backend_verified');
-    if (verified === 'true') {
-      setIsVerified(true);
-    }
-  }, []);
 
   const handleVerified = () => {
     setIsVerified(true);

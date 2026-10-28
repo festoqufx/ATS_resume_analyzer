@@ -32,7 +32,9 @@ export default function BackendStatusBanner() {
   }, []);
 
   useEffect(() => {
-    checkHealth();
+    queueMicrotask(() => {
+      void checkHealth();
+    });
     const interval = setInterval(checkHealth, POLL_INTERVAL);
     return () => clearInterval(interval);
   }, [checkHealth]);

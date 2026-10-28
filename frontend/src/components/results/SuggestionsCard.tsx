@@ -19,10 +19,6 @@ export default function SuggestionsCard({ suggestions }: SuggestionsCardProps) {
     }
   };
 
-  const getCategoryIcon = (category: string) => {
-    return Sparkles;
-  };
-
   return (
     <div className="card p-6 h-full">
       <div className="flex items-center justify-between mb-6">
@@ -42,8 +38,6 @@ export default function SuggestionsCard({ suggestions }: SuggestionsCardProps) {
       {suggestions.length > 0 ? (
         <div className="space-y-4 max-h-[400px] overflow-y-auto pr-2">
           {suggestions.map((suggestion, index) => {
-            const IconComponent = getCategoryIcon(suggestion.category);
-
             return (
               <div
                 key={index}
@@ -51,7 +45,7 @@ export default function SuggestionsCard({ suggestions }: SuggestionsCardProps) {
               >
                 <div className="flex items-start gap-3">
                   <div className="w-8 h-8 rounded-lg bg-white flex items-center justify-center shadow-sm">
-                    <IconComponent className="w-4 h-4 text-brand-600" />
+                    <Sparkles className="w-4 h-4 text-brand-600" />
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-2 mb-1">
