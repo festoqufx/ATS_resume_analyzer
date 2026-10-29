@@ -11,8 +11,8 @@ export default function KeywordsCard({ keywords }: KeywordsCardProps) {
   return (
     <div className="card p-6 h-full">
       <div className="flex items-center gap-3 mb-6">
-        <div className="w-10 h-10 bg-cyan-100 rounded-xl flex items-center justify-center">
-          <Search className="w-5 h-5 text-cyan-600" />
+        <div className="w-10 h-10 bg-gray-200 rounded-xl flex items-center justify-center">
+          <Search className="w-5 h-5 text-gray-800" />
         </div>
         <div>
           <h2 className="text-lg font-semibold text-gray-900">Keywords Analysis</h2>
@@ -24,7 +24,7 @@ export default function KeywordsCard({ keywords }: KeywordsCardProps) {
         {/* Found Keywords */}
         <div>
           <div className="flex items-center gap-2 mb-3">
-            <CheckCircle2 className="w-4 h-4 text-success-500" />
+            <CheckCircle2 className="w-4 h-4 text-gray-700" />
             <h3 className="text-sm font-semibold text-gray-700">
               Found Keywords ({keywords.found.length})
             </h3>
@@ -34,7 +34,7 @@ export default function KeywordsCard({ keywords }: KeywordsCardProps) {
               keywords.found.map((kw) => (
                 <span
                   key={kw}
-                  className="px-3 py-1.5 bg-success-50 text-success-700 rounded-lg text-sm font-medium"
+                  className="px-3 py-1.5 bg-gray-200 text-gray-800 rounded-lg text-sm font-medium"
                 >
                   {kw}
                 </span>
@@ -48,7 +48,7 @@ export default function KeywordsCard({ keywords }: KeywordsCardProps) {
         {/* Missing Keywords */}
         <div>
           <div className="flex items-center gap-2 mb-3">
-            <XCircle className="w-4 h-4 text-danger-500" />
+            <XCircle className="w-4 h-4 text-gray-700" />
             <h3 className="text-sm font-semibold text-gray-700">
               Missing Keywords ({keywords.missing.length})
             </h3>
@@ -58,7 +58,7 @@ export default function KeywordsCard({ keywords }: KeywordsCardProps) {
               keywords.missing.map((kw) => (
                 <span
                   key={kw}
-                  className="px-3 py-1.5 bg-danger-50 text-danger-700 rounded-lg text-sm font-medium"
+                  className="px-3 py-1.5 bg-gray-300 text-gray-800 rounded-lg text-sm font-medium"
                 >
                   {kw}
                 </span>
@@ -73,7 +73,7 @@ export default function KeywordsCard({ keywords }: KeywordsCardProps) {
         {keywords.recommended.length > 0 && (
           <div>
             <div className="flex items-center gap-2 mb-3">
-              <Sparkles className="w-4 h-4 text-brand-500" />
+              <Sparkles className="w-4 h-4 text-gray-800" />
               <h3 className="text-sm font-semibold text-gray-700">
                 Recommended to Add
               </h3>
@@ -82,7 +82,7 @@ export default function KeywordsCard({ keywords }: KeywordsCardProps) {
               {keywords.recommended.map((kw) => (
                 <span
                   key={kw}
-                  className="px-3 py-1.5 bg-brand-50 text-brand-700 rounded-lg text-sm font-medium border border-brand-200 border-dashed"
+                  className="px-3 py-1.5 bg-gray-100 text-gray-800 rounded-lg text-sm font-medium border border-gray-300 border-dashed"
                 >
                   + {kw}
                 </span>

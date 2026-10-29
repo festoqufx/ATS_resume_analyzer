@@ -68,8 +68,8 @@ export default function WakeUpScreen({ onVerified }: WakeUpScreenProps) {
     <div className="fixed inset-0 z-[100] flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
       {/* Background decorations */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-brand-500/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-brand-600/10 rounded-full blur-3xl" />
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gray-400/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gray-200/10 rounded-full blur-3xl" />
       </div>
 
       <div className="relative w-full max-w-md mx-4">
@@ -77,11 +77,11 @@ export default function WakeUpScreen({ onVerified }: WakeUpScreenProps) {
         <div className="bg-white/[0.03] backdrop-blur-xl border border-white/10 rounded-3xl p-8 sm:p-10 text-center shadow-2xl">
           {/* Logo area */}
           <div className="mb-6">
-            <div className="w-16 h-16 mx-auto bg-gradient-to-br from-brand-500 to-brand-600 rounded-2xl flex items-center justify-center shadow-lg shadow-brand-500/30 mb-4">
+            <div className="w-16 h-16 mx-auto bg-gradient-to-br from-gray-900 to-gray-700 rounded-2xl flex items-center justify-center shadow-lg shadow-gray-900/30 mb-4">
               <ShieldCheck className="w-8 h-8 text-white" />
             </div>
             <h1 className="text-2xl font-bold text-white font-display">
-              ATS<span className="text-brand-400">Analyzer</span>
+              ATS<span className="text-gray-400">Analyzer</span>
             </h1>
           </div>
 
@@ -98,12 +98,12 @@ export default function WakeUpScreen({ onVerified }: WakeUpScreenProps) {
 
               <button
                 onClick={handleVerify}
-                className="group relative w-full bg-white/5 hover:bg-white/10 border border-white/20 hover:border-brand-500/50 rounded-2xl p-5 transition-all duration-300 cursor-pointer"
+                className="group relative w-full bg-white/5 hover:bg-white/10 border border-white/20 hover:border-gray-400/50 rounded-2xl p-5 transition-all duration-300 cursor-pointer"
               >
                 <div className="flex items-center gap-4">
                   {/* Checkbox */}
-                  <div className="w-7 h-7 rounded-lg border-2 border-gray-500 group-hover:border-brand-500 flex items-center justify-center transition-colors">
-                    <div className="w-3 h-3 rounded-sm bg-transparent group-hover:bg-brand-500/30 transition-colors" />
+                  <div className="w-7 h-7 rounded-lg border-2 border-gray-500 group-hover:border-gray-300 flex items-center justify-center transition-colors">
+                    <div className="w-3 h-3 rounded-sm bg-transparent group-hover:bg-gray-400/30 transition-colors" />
                   </div>
                   <span className="text-gray-300 font-medium text-lg">
                     I&apos;m not a robot
@@ -120,7 +120,7 @@ export default function WakeUpScreen({ onVerified }: WakeUpScreenProps) {
           {status === 'waking' && (
             <>
               <div className="mb-6">
-                <Loader2 className="w-10 h-10 text-brand-400 mx-auto animate-spin" />
+                <Loader2 className="w-10 h-10 text-gray-300 mx-auto animate-spin" />
               </div>
               <p className="text-white font-semibold text-lg mb-2">
                 Waking up server{dots}
@@ -136,9 +136,9 @@ export default function WakeUpScreen({ onVerified }: WakeUpScreenProps) {
                     key={n}
                     className={`w-2.5 h-2.5 rounded-full transition-all duration-500 ${
                       n < attempt
-                        ? 'bg-brand-500'
+                        ? 'bg-gray-300'
                         : n === attempt
-                        ? 'bg-brand-400 animate-pulse'
+                        ? 'bg-gray-500 animate-pulse'
                         : 'bg-gray-700'
                     }`}
                   />
@@ -160,8 +160,8 @@ export default function WakeUpScreen({ onVerified }: WakeUpScreenProps) {
           {status === 'success' && (
             <>
               <div className="mb-6">
-                <div className="w-16 h-16 mx-auto bg-success-500/20 rounded-2xl flex items-center justify-center">
-                  <CheckCircle2 className="w-10 h-10 text-success-500" />
+                <div className="w-16 h-16 mx-auto bg-gray-500/20 rounded-2xl flex items-center justify-center">
+                <CheckCircle2 className="w-10 h-10 text-gray-300" />
                 </div>
               </div>
               <p className="text-white font-semibold text-lg mb-2">
@@ -176,8 +176,8 @@ export default function WakeUpScreen({ onVerified }: WakeUpScreenProps) {
           {status === 'error' && (
             <>
               <div className="mb-6">
-                <div className="w-16 h-16 mx-auto bg-danger-500/20 rounded-2xl flex items-center justify-center">
-                  <WifiOff className="w-10 h-10 text-danger-500" />
+                <div className="w-16 h-16 mx-auto bg-gray-500/20 rounded-2xl flex items-center justify-center">
+                  <WifiOff className="w-10 h-10 text-gray-300" />
                 </div>
               </div>
               <p className="text-white font-semibold text-lg mb-2">
@@ -189,7 +189,7 @@ export default function WakeUpScreen({ onVerified }: WakeUpScreenProps) {
               </p>
               <button
                 onClick={handleVerify}
-                className="inline-flex items-center gap-2 px-6 py-3 bg-brand-600 hover:bg-brand-700 text-white font-semibold rounded-xl transition-colors"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-gray-200 hover:bg-gray-300 text-gray-900 font-semibold rounded-xl transition-colors"
               >
                 <RefreshCw className="w-4 h-4" />
                 Try Again

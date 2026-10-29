@@ -46,8 +46,8 @@ export default function BackendStatusBanner() {
           isOnline === null
             ? 'bg-gray-800/80 border-gray-600/50 text-gray-300'
             : isOnline
-            ? 'bg-emerald-900/80 border-emerald-500/30 text-emerald-300'
-            : 'bg-red-900/80 border-red-500/30 text-red-300'
+            ? 'bg-gray-700/85 border-gray-500/40 text-gray-100'
+            : 'bg-gray-900/85 border-gray-600/40 text-gray-300'
         }`}
       >
         {isOnline === null ? (
@@ -59,13 +59,13 @@ export default function BackendStatusBanner() {
           <>
             <Wifi className="w-3.5 h-3.5" />
             <span>Server Online</span>
-            <div className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+            <div className="w-2 h-2 rounded-full bg-gray-200 animate-pulse" />
           </>
         ) : (
           <>
             <WifiOff className="w-3.5 h-3.5" />
             <span>Server Offline</span>
-            <div className="w-2 h-2 rounded-full bg-red-400" />
+            <div className="w-2 h-2 rounded-full bg-gray-500" />
           </>
         )}
       </div>

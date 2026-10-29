@@ -20,12 +20,12 @@ export default function LoadingOverlay() {
         {/* Animated Icon */}
         <div className="relative w-24 h-24 mx-auto mb-8">
           {/* Outer spinning ring */}
-          <div className="absolute inset-0 border-4 border-brand-200 rounded-full" />
-          <div className="absolute inset-0 border-4 border-transparent border-t-brand-600 rounded-full animate-spin" />
+          <div className="absolute inset-0 border-4 border-gray-300 rounded-full" />
+          <div className="absolute inset-0 border-4 border-transparent border-t-gray-900 rounded-full animate-spin" />
           
           {/* Center icon */}
-          <div className="absolute inset-4 bg-brand-50 rounded-full flex items-center justify-center">
-            <FileText className="w-8 h-8 text-brand-600" />
+          <div className="absolute inset-4 bg-gray-100 rounded-full flex items-center justify-center">
+            <FileText className="w-8 h-8 text-gray-900" />
           </div>
         </div>
 
@@ -62,7 +62,7 @@ function LoadingStep({ text, delay }: { text: string; delay: number }) {
       }}
       className="flex items-center gap-3 text-sm text-gray-600"
     >
-      <Loader2 className="w-4 h-4 animate-spin text-brand-600" />
+      <Loader2 className="w-4 h-4 animate-spin text-gray-900" />
       <span>{text}</span>
     </motion.div>
   );

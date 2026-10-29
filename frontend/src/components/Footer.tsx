@@ -12,11 +12,11 @@ export default function Footer() {
           {/* Brand */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-brand-500 to-brand-600 rounded-xl flex items-center justify-center">
+              <div className="w-10 h-10 bg-gradient-to-br from-gray-700 to-gray-900 rounded-xl flex items-center justify-center">
                 <FileText className="w-5 h-5 text-white" />
               </div>
               <span className="text-xl font-bold font-display">
-                ATS<span className="text-brand-400">Analyzer</span>
+                ATS<span className="text-gray-400">Analyzer</span>
               </span>
             </div>
             <p className="text-gray-400 max-w-md mb-4">
@@ -24,12 +24,12 @@ export default function Footer() {
               how ATS systems read their resumes. Built with cutting-edge tech,
               shipped with zero bloat. ⚡
             </p>
-            <p className="text-brand-400 font-medium mb-4">
+            <p className="text-gray-300 font-medium mb-4">
               Built with ❤️ for job seekers everywhere
             </p>
             {/* Privacy Notice - Sarcastic */}
             <div className="bg-gray-800 rounded-lg p-3 mb-4 border border-gray-700">
-              <p className="text-green-400 text-sm font-medium mb-1">🔒 Zero Data Storage Policy</p>
+              <p className="text-gray-300 text-sm font-medium mb-1">🔒 Zero Data Storage Policy</p>
               <p className="text-gray-400 text-xs">
                 We don&apos;t store your resume data. Seriously, we couldn&apos;t even if we wanted to — 
                 have you seen cloud storage prices? 💸 Your privacy is safe simply because we&apos;re too broke to spy on you.
@@ -39,7 +39,7 @@ export default function Footer() {
               <span className="inline-flex items-center gap-2 bg-gray-800 text-gray-200 px-3 py-1 rounded-full text-sm">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                   <path d="M3 3h10l5 5v12a1 1 0 01-1 1H3a1 1 0 01-1-1V4a1 1 0 011-1z" stroke="#9CA3AF" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M9 14l2 2 5-6" stroke="#10B981" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M9 14l2 2 5-6" stroke="#D1D5DB" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
                 Local OCR fallback for scanned PDFs
               </span>
@@ -124,7 +124,7 @@ export default function Footer() {
               href="https://github.com/itslovepatel"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-brand-400 hover:text-brand-300 transition-colors"
+              className="text-gray-300 hover:text-white transition-colors"
             >
               Love Patel
             </a>
@@ -132,7 +132,7 @@ export default function Footer() {
           <div className="flex items-center gap-4">
             <a
               href="mailto:Lovepatelforwork@gmail.com"
-              className="text-brand-400 hover:text-white transition-colors font-semibold"
+              className="text-gray-300 hover:text-white transition-colors font-semibold"
               title="Email"
               aria-label="Email Love Patel"
             >

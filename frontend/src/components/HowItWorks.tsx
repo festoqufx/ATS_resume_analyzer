@@ -8,19 +8,19 @@ const steps = [
     icon: Upload,
     title: 'Upload Resume',
     description: 'Drag & drop your PDF or DOCX resume file',
-    color: 'from-blue-500 to-blue-600',
+    color: 'from-gray-900 to-gray-700',
   },
   {
     icon: Cpu,
     title: 'AI Analyzes',
     description: 'Our AI parses and scores your resume in seconds',
-    color: 'from-purple-500 to-purple-600',
+    color: 'from-gray-800 to-gray-600',
   },
   {
     icon: BarChart3,
     title: 'Get Insights',
     description: 'Receive detailed ATS score and improvement tips',
-    color: 'from-green-500 to-green-600',
+    color: 'from-gray-700 to-gray-500',
   },
 ];
 

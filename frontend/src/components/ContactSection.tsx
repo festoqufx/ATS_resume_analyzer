@@ -44,13 +44,13 @@ export default function ContactSection() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Content */}
           <div>
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-brand-50 border border-brand-200 rounded-full text-brand-700 text-sm font-medium mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 border border-gray-300 rounded-full text-gray-700 text-sm font-medium mb-6">
               <Building2 className="w-4 h-4" />
               <span>For Enterprises & Businesses</span>
             </div>
             
             <h2 className="text-4xl lg:text-5xl font-bold font-display text-gray-900 mb-6">
-              Need a <span className="text-brand-600">Custom ATS</span> Solution?
+              Need a <span className="text-gray-700">Custom ATS</span> Solution?
             </h2>
             
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
@@ -61,8 +61,8 @@ export default function ContactSection() {
 
             <div className="space-y-4 mb-8">
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-brand-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <CheckCircle className="w-5 h-5 text-brand-600" />
+                <div className="w-10 h-10 bg-gray-200 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <CheckCircle className="w-5 h-5 text-gray-700" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900">Custom ATS Development</h4>
@@ -70,8 +70,8 @@ export default function ContactSection() {
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-brand-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <CheckCircle className="w-5 h-5 text-brand-600" />
+                <div className="w-10 h-10 bg-gray-200 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <CheckCircle className="w-5 h-5 text-gray-700" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900">Resume Parsing APIs</h4>
@@ -79,8 +79,8 @@ export default function ContactSection() {
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-brand-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <CheckCircle className="w-5 h-5 text-brand-600" />
+                <div className="w-10 h-10 bg-gray-200 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <CheckCircle className="w-5 h-5 text-gray-700" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900">White-label Solutions</h4>
@@ -93,7 +93,7 @@ export default function ContactSection() {
             <div className="flex flex-wrap items-center gap-6">
               <a
                 href="mailto:Lovepatelforwork@gmail.com"
-                className="flex items-center gap-2 text-gray-700 hover:text-brand-600 transition-colors"
+                className="flex items-center gap-2 text-gray-700 hover:text-gray-900 transition-colors"
               >
                 <Mail className="w-5 h-5" />
                 <span>Lovepatelforwork@gmail.com</span>
@@ -102,7 +102,7 @@ export default function ContactSection() {
                 href="https://github.com/itslovepatel/Resume-ATS"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-gray-700 hover:text-brand-600 transition-colors"
+                className="flex items-center gap-2 text-gray-700 hover:text-gray-900 transition-colors"
               >
                 <Code2 className="w-5 h-5" />
                 <span>github.com/itslovepatel</span>
@@ -116,8 +116,8 @@ export default function ContactSection() {
             
             {isSubmitted ? (
               <div className="text-center py-12">
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <CheckCircle className="w-8 h-8 text-green-600" />
+                <div className="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <CheckCircle className="w-8 h-8 text-gray-700" />
                 </div>
                 <h4 className="text-xl font-semibold text-gray-900 mb-2">Email Client Opened!</h4>
                 <p className="text-gray-600">
@@ -137,7 +137,7 @@ export default function ContactSection() {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-brand-500 focus:border-transparent transition-all outline-none"
+                    className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-gray-700 focus:border-transparent transition-all outline-none"
                     placeholder="John Doe"
                   />
                 </div>
@@ -153,7 +153,7 @@ export default function ContactSection() {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-brand-500 focus:border-transparent transition-all outline-none"
+                    className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-gray-700 focus:border-transparent transition-all outline-none"
                     placeholder="john@company.com"
                   />
                 </div>
@@ -168,7 +168,7 @@ export default function ContactSection() {
                     name="company"
                     value={formData.company}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-brand-500 focus:border-transparent transition-all outline-none"
+                    className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-gray-700 focus:border-transparent transition-all outline-none"
                     placeholder="Acme Inc."
                   />
                 </div>
@@ -184,7 +184,7 @@ export default function ContactSection() {
                     rows={4}
                     value={formData.message}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-brand-500 focus:border-transparent transition-all outline-none resize-none"
+                    className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-gray-700 focus:border-transparent transition-all outline-none resize-none"
                     placeholder="Tell me about your project requirements..."
                   />
                 </div>
@@ -192,7 +192,7 @@ export default function ContactSection() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full py-4 bg-gradient-to-r from-brand-600 to-brand-500 text-white font-semibold rounded-xl hover:from-brand-700 hover:to-brand-600 transition-all duration-300 flex items-center justify-center gap-2 disabled:opacity-70"
+                  className="w-full py-4 bg-gradient-to-r from-gray-900 to-gray-700 text-white font-semibold rounded-xl hover:from-black hover:to-gray-800 transition-all duration-300 flex items-center justify-center gap-2 disabled:opacity-70"
                 >
                   {isSubmitting ? (
                     <>

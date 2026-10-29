@@ -7,25 +7,25 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-lg border-b border-gray-100">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white/85 backdrop-blur-xl border-b border-gray-200/90">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-[4.5rem]">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-brand-500 to-brand-600 rounded-xl flex items-center justify-center shadow-lg shadow-brand-500/25">
+            <div className="w-10 h-10 bg-gradient-to-br from-gray-900 to-gray-700 rounded-xl flex items-center justify-center shadow-lg shadow-gray-900/20">
               <FileText className="w-5 h-5 text-white" />
             </div>
-            <span className="text-xl font-bold font-display text-gray-900">
-              ATS<span className="text-brand-600">Analyzer</span>
+            <span className="text-xl font-bold tracking-tight font-display text-gray-900">
+              ATS<span className="text-gray-600">Analyzer</span>
             </span>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            <a href="#how-it-works" className="text-gray-600 hover:text-brand-600 transition-colors font-medium">
+            <a href="#how-it-works" className="text-gray-600 hover:text-gray-900 transition-colors font-medium">
               How It Works
             </a>
-            <a href="#features" className="text-gray-600 hover:text-brand-600 transition-colors font-medium">
+            <a href="#features" className="text-gray-600 hover:text-gray-900 transition-colors font-medium">
               Features
             </a>
             <a href="#upload" className="btn-primary">
@@ -52,14 +52,14 @@ export default function Header() {
             <div className="flex flex-col gap-4">
               <a
                 href="#how-it-works"
-                className="text-gray-600 hover:text-brand-600 transition-colors font-medium px-2 py-2"
+                className="text-gray-600 hover:text-gray-900 transition-colors font-medium px-2 py-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 How It Works
               </a>
               <a
                 href="#features"
-                className="text-gray-600 hover:text-brand-600 transition-colors font-medium px-2 py-2"
+                className="text-gray-600 hover:text-gray-900 transition-colors font-medium px-2 py-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Features

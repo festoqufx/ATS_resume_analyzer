@@ -5,7 +5,7 @@ import { Shield, Database, Lock, Trash2, Code, Code2 } from 'lucide-react';
 
 export default function PrivacyBanner() {
   return (
-    <section className="py-12 bg-gradient-to-r from-green-50 via-emerald-50 to-teal-50">
+    <section className="py-12 bg-gradient-to-r from-gray-100 via-white to-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -14,9 +14,9 @@ export default function PrivacyBanner() {
           transition={{ duration: 0.5 }}
           className="text-center mb-8"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-100 rounded-full border border-green-200 mb-4">
-            <Shield className="w-5 h-5 text-green-600" />
-            <span className="text-sm font-semibold text-green-700">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-gray-200 rounded-full border border-gray-300 mb-4">
+            <Shield className="w-5 h-5 text-gray-800" />
+            <span className="text-sm font-semibold text-gray-800">
               Privacy-First Architecture
             </span>
           </div>
@@ -35,9 +35,9 @@ export default function PrivacyBanner() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="bg-white rounded-xl p-6 shadow-sm border border-green-100"
+            className="bg-white rounded-xl p-6 shadow-sm border border-gray-200"
           >
-            <Database className="w-8 h-8 text-green-600 mb-3" />
+            <Database className="w-8 h-8 text-gray-800 mb-3" />
             <h3 className="font-bold text-gray-900 mb-2">No Database</h3>
             <p className="text-sm text-gray-600">
               Zero databases = zero data breaches. It&apos;s called &quot;serverless security&quot; (and being frugal) 💰
@@ -49,9 +49,9 @@ export default function PrivacyBanner() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="bg-white rounded-xl p-6 shadow-sm border border-green-100"
+            className="bg-white rounded-xl p-6 shadow-sm border border-gray-200"
           >
-            <Lock className="w-8 h-8 text-green-600 mb-3" />
+            <Lock className="w-8 h-8 text-gray-800 mb-3" />
             <h3 className="font-bold text-gray-900 mb-2">Stateless API</h3>
             <p className="text-sm text-gray-600">
               Each request is a fresh start. Your resume goes in, analysis comes out, nothing stays behind. Clean AF. ✨
@@ -63,9 +63,9 @@ export default function PrivacyBanner() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="bg-white rounded-xl p-6 shadow-sm border border-green-100"
+            className="bg-white rounded-xl p-6 shadow-sm border border-gray-200"
           >
-            <Trash2 className="w-8 h-8 text-green-600 mb-3" />
+            <Trash2 className="w-8 h-8 text-gray-800 mb-3" />
             <h3 className="font-bold text-gray-900 mb-2">Auto-Purged</h3>
             <p className="text-sm text-gray-600">
               Your file gets analyzed and immediately yeeted into the void. We couldn&apos;t recover it even if we tried. 🗑️
@@ -77,9 +77,9 @@ export default function PrivacyBanner() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.4 }}
-            className="bg-white rounded-xl p-6 shadow-sm border border-green-100"
+            className="bg-white rounded-xl p-6 shadow-sm border border-gray-200"
           >
-            <Code className="w-8 h-8 text-green-600 mb-3" />
+            <Code className="w-8 h-8 text-gray-800 mb-3" />
             <h3 className="font-bold text-gray-900 mb-2">100% Open Source</h3>
             <p className="text-sm text-gray-600">
               Don&apos;t trust us? Check the code yourself. We&apos;re transparent like freshly cleaned glass. 🔍
@@ -98,7 +98,7 @@ export default function PrivacyBanner() {
             href="https://github.com/itslovepatel/Resume-ATS"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-green-700 hover:text-green-800 font-medium transition-colors"
+            className="inline-flex items-center gap-2 text-gray-700 hover:text-gray-900 font-medium transition-colors"
           >
             <Code2 className="w-5 h-5" />
             <span>Audit our code on GitHub</span>

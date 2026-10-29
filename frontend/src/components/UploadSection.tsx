@@ -64,15 +64,16 @@ export default function UploadSection({ onAnalyze, error }: UploadSectionProps) 
   const displayError = error || validationError;
 
   return (
-    <section id="upload" className="py-20 bg-white">
+    <section id="upload" className="py-24 bg-white border-y border-gray-200/80">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-center mb-10"
+          className="text-center mb-12"
         >
+          <div className="section-kicker mb-4">Start analysis</div>
           <h2 className="section-title text-3xl sm:text-4xl">
             Upload Your Resume
           </h2>
@@ -96,7 +97,7 @@ export default function UploadSection({ onAnalyze, error }: UploadSectionProps) 
                 exit={{ opacity: 0, height: 0 }}
                 className="mb-6"
               >
-                <div className="flex items-center gap-3 p-4 bg-danger-50 border border-danger-100 rounded-xl text-danger-600">
+                <div className="flex items-center gap-3 p-4 bg-gray-200 border border-gray-300 rounded-xl text-gray-800">
                   <AlertCircle className="w-5 h-5 flex-shrink-0" />
                   <span className="text-sm font-medium">{displayError}</span>
                 </div>
@@ -107,13 +108,13 @@ export default function UploadSection({ onAnalyze, error }: UploadSectionProps) 
           {/* Dropzone */}
           <div
             {...getRootProps()}
-            className={`relative border-2 border-dashed rounded-2xl p-12 text-center cursor-pointer transition-all duration-300
+            className={`relative border-2 border-dashed rounded-3xl p-12 text-center cursor-pointer transition-all duration-300
               ${
                 isDragActive
-                  ? 'border-brand-500 bg-brand-50'
+                  ? 'border-gray-900 bg-gray-100'
                   : file
-                  ? 'border-success-500 bg-success-50'
-                  : 'border-gray-300 hover:border-brand-400 hover:bg-gray-50'
+                  ? 'border-gray-700 bg-gray-100'
+                  : 'border-gray-300 hover:border-gray-700 hover:bg-gray-50'
               }
             `}
           >
@@ -128,8 +129,8 @@ export default function UploadSection({ onAnalyze, error }: UploadSectionProps) 
                   exit={{ opacity: 0, scale: 0.9 }}
                   className="flex flex-col items-center"
                 >
-                  <div className="w-16 h-16 bg-success-100 rounded-2xl flex items-center justify-center mb-4">
-                    <CheckCircle2 className="w-8 h-8 text-success-600" />
+                  <div className="w-16 h-16 bg-gray-200 rounded-2xl flex items-center justify-center mb-4">
+                    <CheckCircle2 className="w-8 h-8 text-gray-800" />
                   </div>
                   <div className="flex items-center gap-3 mb-2">
                     <FileText className="w-5 h-5 text-gray-500" />
@@ -158,12 +159,12 @@ export default function UploadSection({ onAnalyze, error }: UploadSectionProps) 
                 >
                   <div
                     className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-4 transition-colors ${
-                      isDragActive ? 'bg-brand-100' : 'bg-gray-100'
+                      isDragActive ? 'bg-gray-300' : 'bg-gray-100'
                     }`}
                   >
                     <Upload
                       className={`w-8 h-8 transition-colors ${
-                        isDragActive ? 'text-brand-600' : 'text-gray-400'
+                        isDragActive ? 'text-gray-900' : 'text-gray-400'
                       }`}
                     />
                   </div>

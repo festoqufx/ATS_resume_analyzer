@@ -9,17 +9,17 @@ interface ProjectsCardProps {
 
 export default function ProjectsCard({ projects }: ProjectsCardProps) {
   const getScoreColor = (score: number) => {
-    if (score >= 70) return 'text-success-600 bg-success-50';
-    if (score >= 50) return 'text-warning-600 bg-warning-50';
-    return 'text-danger-600 bg-danger-50';
+    if (score >= 70) return 'text-gray-900 bg-gray-200';
+    if (score >= 50) return 'text-gray-800 bg-gray-200';
+    return 'text-gray-700 bg-gray-300';
   };
 
   return (
     <div className="card p-6 h-full">
       <div className="flex items-center justify-between mb-6">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 bg-pink-100 rounded-xl flex items-center justify-center">
-            <FolderKanban className="w-5 h-5 text-pink-600" />
+          <div className="w-10 h-10 bg-gray-200 rounded-xl flex items-center justify-center">
+            <FolderKanban className="w-5 h-5 text-gray-800" />
           </div>
           <div>
             <h2 className="text-lg font-semibold text-gray-900">Projects</h2>
@@ -50,7 +50,7 @@ export default function ProjectsCard({ projects }: ProjectsCardProps) {
                   {project.technologies.slice(0, 5).map((tech) => (
                     <span
                       key={tech}
-                      className="inline-flex items-center gap-1 px-2 py-0.5 bg-brand-50 text-brand-700 rounded text-xs"
+                      className="inline-flex items-center gap-1 px-2 py-0.5 bg-gray-200 text-gray-800 rounded text-xs"
                     >
                       <Code className="w-3 h-3" />
                       {tech}

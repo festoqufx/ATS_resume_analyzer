@@ -8,19 +8,19 @@ interface ScoreBreakdownCardProps {
 }
 
 const breakdownItems = [
-  { key: 'keyword_relevance', label: 'Keyword Relevance', icon: Target, color: 'bg-blue-500' },
-  { key: 'section_completeness', label: 'Section Completeness', icon: FileCheck, color: 'bg-purple-500' },
-  { key: 'formatting_score', label: 'Formatting', icon: Layout, color: 'bg-green-500' },
-  { key: 'skill_relevance', label: 'Skill Relevance', icon: Code2, color: 'bg-orange-500' },
-  { key: 'experience_clarity', label: 'Experience Clarity', icon: Briefcase, color: 'bg-pink-500' },
-  { key: 'project_impact', label: 'Project Impact', icon: FolderKanban, color: 'bg-indigo-500' },
+  { key: 'keyword_relevance', label: 'Keyword Relevance', icon: Target, color: 'bg-gray-900' },
+  { key: 'section_completeness', label: 'Section Completeness', icon: FileCheck, color: 'bg-gray-800' },
+  { key: 'formatting_score', label: 'Formatting', icon: Layout, color: 'bg-gray-700' },
+  { key: 'skill_relevance', label: 'Skill Relevance', icon: Code2, color: 'bg-gray-600' },
+  { key: 'experience_clarity', label: 'Experience Clarity', icon: Briefcase, color: 'bg-gray-700' },
+  { key: 'project_impact', label: 'Project Impact', icon: FolderKanban, color: 'bg-gray-800' },
 ];
 
 export default function ScoreBreakdownCard({ breakdown }: ScoreBreakdownCardProps) {
   const getBarColor = (score: number) => {
-    if (score >= 80) return 'bg-success-500';
-    if (score >= 60) return 'bg-warning-500';
-    return 'bg-danger-500';
+    if (score >= 80) return 'bg-gray-900';
+    if (score >= 60) return 'bg-gray-700';
+    return 'bg-gray-500';
   };
 
   return (

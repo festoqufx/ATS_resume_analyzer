@@ -22,9 +22,9 @@ export default function ScoreCircle({ score, size = 120 }: ScoreCircleProps) {
   }, [score]);
 
   const getColor = (s: number) => {
-    if (s >= 80) return { stroke: '#22c55e', bg: '#dcfce7' };
-    if (s >= 60) return { stroke: '#f59e0b', bg: '#fef3c7' };
-    return { stroke: '#ef4444', bg: '#fee2e2' };
+    if (s >= 80) return { stroke: '#1f2937', bg: '#e5e7eb' };
+    if (s >= 60) return { stroke: '#4b5563', bg: '#e5e7eb' };
+    return { stroke: '#6b7280', bg: '#d1d5db' };
   };
 
   const colors = getColor(score);

@@ -9,17 +9,17 @@ interface ExperienceCardProps {
 
 export default function ExperienceCard({ experience }: ExperienceCardProps) {
   const getQualityColor = (quality: number) => {
-    if (quality >= 70) return 'text-success-600 bg-success-50';
-    if (quality >= 50) return 'text-warning-600 bg-warning-50';
-    return 'text-danger-600 bg-danger-50';
+    if (quality >= 70) return 'text-gray-900 bg-gray-200';
+    if (quality >= 50) return 'text-gray-800 bg-gray-200';
+    return 'text-gray-700 bg-gray-300';
   };
 
   return (
     <div className="card p-6 h-full">
       <div className="flex items-center justify-between mb-6">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 bg-indigo-100 rounded-xl flex items-center justify-center">
-            <Briefcase className="w-5 h-5 text-indigo-600" />
+          <div className="w-10 h-10 bg-gray-200 rounded-xl flex items-center justify-center">
+            <Briefcase className="w-5 h-5 text-gray-800" />
           </div>
           <div>
             <h2 className="text-lg font-semibold text-gray-900">Work Experience</h2>
@@ -68,7 +68,7 @@ export default function ExperienceCard({ experience }: ExperienceCardProps) {
                   <span>Action Verbs: {position.action_verbs_count}</span>
                 </div>
                 {position.has_metrics && (
-                  <div className="flex items-center gap-1.5 text-success-600">
+                  <div className="flex items-center gap-1.5 text-gray-700">
                     <Hash className="w-3.5 h-3.5" />
                     <span>Has Metrics</span>
                   </div>

@@ -13,26 +13,26 @@ export default function IssuesCard({ issues }: IssuesCardProps) {
       case 'High':
         return {
           icon: AlertTriangle,
-          bg: 'bg-danger-50',
-          border: 'border-danger-200',
-          iconColor: 'text-danger-500',
-          badge: 'bg-danger-100 text-danger-700',
+          bg: 'bg-gray-200',
+          border: 'border-gray-300',
+          iconColor: 'text-gray-800',
+          badge: 'bg-gray-300 text-gray-800',
         };
       case 'Medium':
         return {
           icon: AlertCircle,
-          bg: 'bg-warning-50',
-          border: 'border-warning-200',
-          iconColor: 'text-warning-500',
-          badge: 'bg-warning-100 text-warning-700',
+          bg: 'bg-gray-100',
+          border: 'border-gray-300',
+          iconColor: 'text-gray-700',
+          badge: 'bg-gray-200 text-gray-700',
         };
       default:
         return {
           icon: Info,
-          bg: 'bg-blue-50',
-          border: 'border-blue-200',
-          iconColor: 'text-blue-500',
-          badge: 'bg-blue-100 text-blue-700',
+          bg: 'bg-gray-100',
+          border: 'border-gray-200',
+          iconColor: 'text-gray-600',
+          badge: 'bg-gray-200 text-gray-700',
         };
     }
   };
@@ -47,8 +47,8 @@ export default function IssuesCard({ issues }: IssuesCardProps) {
     <div className="card p-6 h-full">
       <div className="flex items-center justify-between mb-6">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 bg-red-100 rounded-xl flex items-center justify-center">
-            <AlertTriangle className="w-5 h-5 text-red-600" />
+          <div className="w-10 h-10 bg-gray-200 rounded-xl flex items-center justify-center">
+            <AlertTriangle className="w-5 h-5 text-gray-800" />
           </div>
           <div>
             <h2 className="text-lg font-semibold text-gray-900">ATS Issues Detected</h2>
@@ -57,12 +57,12 @@ export default function IssuesCard({ issues }: IssuesCardProps) {
         </div>
         <div className="flex gap-2">
           {highIssues.length > 0 && (
-            <span className="text-xs px-2 py-1 bg-danger-100 text-danger-700 rounded-full font-medium">
+            <span className="text-xs px-2 py-1 bg-gray-300 text-gray-800 rounded-full font-medium">
               {highIssues.length} High
             </span>
           )}
           {mediumIssues.length > 0 && (
-            <span className="text-xs px-2 py-1 bg-warning-100 text-warning-700 rounded-full font-medium">
+            <span className="text-xs px-2 py-1 bg-gray-200 text-gray-700 rounded-full font-medium">
               {mediumIssues.length} Medium
             </span>
           )}
@@ -100,8 +100,8 @@ export default function IssuesCard({ issues }: IssuesCardProps) {
         </div>
       ) : (
         <div className="text-center py-8">
-          <div className="w-16 h-16 mx-auto mb-4 bg-success-100 rounded-full flex items-center justify-center">
-            <AlertTriangle className="w-8 h-8 text-success-600" />
+          <div className="w-16 h-16 mx-auto mb-4 bg-gray-200 rounded-full flex items-center justify-center">
+            <AlertTriangle className="w-8 h-8 text-gray-700" />
           </div>
           <p className="text-gray-600 font-medium">No major issues detected!</p>
           <p className="text-sm text-gray-500">Your resume looks ATS-friendly</p>
