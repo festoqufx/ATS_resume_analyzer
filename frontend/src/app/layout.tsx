@@ -3,7 +3,7 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: 'ATS Resume Analyzer - Free AI-Powered Resume Score & ATS Compatibility Check',
-  description: 'Upload your resume and get instant ATS compatibility score, skills analysis, and recruiter-level insights. Free AI-powered resume analyzer with zero data storage. Built with ❤️ for job seekers everywhere. No signup required, 100% open source.',
+  description: 'Upload your resume and get an instant ATS compatibility score, skills analysis, and recruiter-level insights. Privacy-first resume analyzer with zero data storage. No signup required and fully open source.',
   keywords: 'ATS resume checker, resume analyzer, ATS score, resume optimization, job search, career tools, free resume scanner, applicant tracking system, resume parser, CV analyzer, job application, resume tips, ATS friendly resume, resume keywords, resume score, free ATS checker, resume grader, job application tips, career advice, resume builder, AI resume analyzer, resume screening, job seeker tools, career optimization, resume feedback, interview preparation, job hunting, recruitment tools, HR technology, resume formatting, professional resume',
   authors: [{ name: 'Love Patel', url: 'https://linkedin.com/in/love-patel-' }],
   creator: 'Love Patel',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'ATS Resume Analyzer - See Your Resume Through an ATS Lens',
-    description: 'Get your free ATS score and actionable insights. Zero data storage, 100% privacy-first, open source. Built with ❤️ for job seekers everywhere.',
+    description: 'Get your ATS score and actionable insights. Zero data storage, privacy-first architecture, and open source.',
     type: 'website',
     locale: 'en_US',
     url: 'https://ats.lovexog.me',
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'ATS Resume Analyzer - Free AI Resume Score & ATS Check',
-    description: 'Upload your resume and get instant ATS compatibility score. Zero data stored, blazingly fast, 100% open source. Built with ❤️ for job seekers.',
+    description: 'Upload your resume and get an instant ATS compatibility score. Zero data stored, privacy-first, and open source.',
     images: ['/og-image.svg'],
   },
   icons: {
@@ -64,7 +64,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.svg" />
-        <meta name="theme-color" content="#3B82F6" />
+        <meta name="theme-color" content="#111827" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

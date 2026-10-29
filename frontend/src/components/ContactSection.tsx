@@ -39,9 +39,9 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-24 bg-gradient-to-b from-gray-50 to-white">
+    <section id="contact" className="py-24 bg-gradient-to-b from-gray-50 to-white border-t border-gray-200/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-14 items-start">
           {/* Left Content */}
           <div>
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 border border-gray-300 rounded-full text-gray-700 text-sm font-medium mb-6">
@@ -49,7 +49,7 @@ export default function ContactSection() {
               <span>For Enterprises & Businesses</span>
             </div>
             
-            <h2 className="text-4xl lg:text-5xl font-bold font-display text-gray-900 mb-6">
+            <h2 className="text-4xl lg:text-5xl font-semibold tracking-tight font-display text-gray-900 mb-6">
               Need a <span className="text-gray-700">Custom ATS</span> Solution?
             </h2>
             
@@ -111,8 +111,8 @@ export default function ContactSection() {
           </div>
 
           {/* Right - Contact Form */}
-          <div className="bg-white rounded-3xl shadow-xl border border-gray-100 p-8 lg:p-10">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">Get in Touch</h3>
+          <div className="surface-panel p-8 lg:p-10">
+            <h3 className="text-2xl font-semibold tracking-tight text-gray-900 mb-6">Get in Touch</h3>
             
             {isSubmitted ? (
               <div className="text-center py-12">
@@ -192,7 +192,7 @@ export default function ContactSection() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full py-4 bg-gradient-to-r from-gray-900 to-gray-700 text-white font-semibold rounded-xl hover:from-black hover:to-gray-800 transition-all duration-300 flex items-center justify-center gap-2 disabled:opacity-70"
+                  className="btn-primary w-full gap-2 disabled:opacity-70"
                 >
                   {isSubmitting ? (
                     <>
@@ -218,7 +218,7 @@ export default function ContactSection() {
         {/* GitHub CTA */}
         <div className="mt-20 bg-gradient-to-r from-gray-900 to-gray-800 rounded-3xl p-8 lg:p-12 text-center">
           <Code2 className="w-12 h-12 text-white mx-auto mb-4" />
-          <h3 className="text-2xl lg:text-3xl font-bold text-white mb-4">
+          <h3 className="text-2xl lg:text-3xl font-semibold tracking-tight text-white mb-4">
             Open Source & Free Forever
           </h3>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto mb-8">
@@ -229,7 +229,7 @@ export default function ContactSection() {
             href="https://github.com/itslovepatel/Resume-ATS"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 px-8 py-4 bg-white text-gray-900 font-semibold rounded-xl hover:bg-gray-100 transition-colors"
+            className="btn-secondary gap-3 px-8 py-4"
           >
             <Code2 className="w-5 h-5" />
             <span>View on GitHub</span>

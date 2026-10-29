@@ -8,31 +8,30 @@ export default function Footer() {
   return (
     <footer className="bg-gray-900 text-white py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
               <div className="w-10 h-10 bg-gradient-to-br from-gray-700 to-gray-900 rounded-xl flex items-center justify-center">
                 <FileText className="w-5 h-5 text-white" />
               </div>
-              <span className="text-xl font-bold font-display">
+              <span className="text-xl font-semibold tracking-tight font-display">
                 ATS<span className="text-gray-400">Analyzer</span>
               </span>
             </div>
             <p className="text-gray-400 max-w-md mb-4">
               Free AI-powered resume analyzer that helps job seekers understand
               how ATS systems read their resumes. Built with cutting-edge tech,
-              shipped with zero bloat. ⚡
+              with a privacy-first architecture.
             </p>
             <p className="text-gray-300 font-medium mb-4">
-              Built with ❤️ for job seekers everywhere
+              Built for job seekers and hiring teams
             </p>
-            {/* Privacy Notice - Sarcastic */}
+            {/* Privacy Notice */}
             <div className="bg-gray-800 rounded-lg p-3 mb-4 border border-gray-700">
-              <p className="text-gray-300 text-sm font-medium mb-1">🔒 Zero Data Storage Policy</p>
+              <p className="text-gray-300 text-sm font-medium mb-1">Zero Data Storage Policy</p>
               <p className="text-gray-400 text-xs">
-                We don&apos;t store your resume data. Seriously, we couldn&apos;t even if we wanted to — 
-                have you seen cloud storage prices? 💸 Your privacy is safe simply because we&apos;re too broke to spy on you.
+                Resume data is processed transiently for analysis and is not retained after request completion.
               </p>
             </div>
             <div className="flex items-center gap-2 mb-4">
@@ -68,7 +67,7 @@ export default function Footer() {
 
           {/* Links */}
           <div>
-            <h4 className="font-semibold mb-4">Product</h4>
+            <h4 className="font-medium mb-4">Product</h4>
             <ul className="space-y-2 text-gray-400">
               <li>
                 <a href="#" className="hover:text-white transition-colors">
@@ -95,7 +94,7 @@ export default function Footer() {
 
           {/* Legal */}
           <div>
-            <h4 className="font-semibold mb-4">Legal</h4>
+            <h4 className="font-medium mb-4">Legal</h4>
             <ul className="space-y-2 text-gray-400">
               <li>
                 <a href="#" className="hover:text-white transition-colors">
@@ -119,7 +118,7 @@ export default function Footer() {
         {/* Bottom */}
         <div className="mt-12 pt-8 border-t border-gray-800 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-gray-500 text-sm">
-            © <span suppressHydrationWarning>{currentYear}</span> ATS Resume Analyzer. Built with ❤️ by{' '}
+            © <span suppressHydrationWarning>{currentYear}</span> ATS Resume Analyzer. Created by{' '}
             <a
               href="https://github.com/itslovepatel"
               target="_blank"

@@ -185,7 +185,7 @@ export default function ResultsDashboard({ results, onReset }: ResultsDashboardP
           {/* Candidate Profile */}
           <div className="surface-panel p-6">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-gray-200 rounded-xl flex items-center justify-center">
+              <div className="icon-panel">
                 <User className="w-5 h-5 text-gray-800" />
               </div>
               <h2 className="text-lg font-semibold text-gray-900">
@@ -235,7 +235,7 @@ export default function ResultsDashboard({ results, onReset }: ResultsDashboardP
           {/* Domain Detection */}
           <div className="surface-panel p-6">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-gray-200 rounded-xl flex items-center justify-center">
+              <div className="icon-panel">
                 <Compass className="w-5 h-5 text-gray-800" />
               </div>
               <h2 className="text-lg font-semibold text-gray-900">
@@ -352,13 +352,13 @@ export default function ResultsDashboard({ results, onReset }: ResultsDashboardP
           className="mt-12 text-center"
         >
           <div className="inline-flex flex-col sm:flex-row items-center gap-4">
-            <button onClick={onReset} className="btn-primary">
+            <button onClick={onReset} className="btn-primary min-w-[220px]">
               Analyze Another Resume
             </button>
             <button 
               onClick={handleDownloadReport}
               disabled={isDownloading}
-              className="btn-secondary flex items-center gap-2 disabled:opacity-50"
+              className="btn-secondary min-w-[220px] flex items-center gap-2 disabled:opacity-50"
             >
               {isDownloading ? (
                 <Loader2 className="w-4 h-4 animate-spin" />

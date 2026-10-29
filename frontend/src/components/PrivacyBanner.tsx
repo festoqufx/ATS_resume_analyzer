@@ -5,7 +5,7 @@ import { Shield, Database, Lock, Trash2, Code, Code2 } from 'lucide-react';
 
 export default function PrivacyBanner() {
   return (
-    <section className="py-12 bg-gradient-to-r from-gray-100 via-white to-gray-100">
+    <section className="py-16 bg-gradient-to-r from-gray-100 via-white to-gray-100 border-y border-gray-200/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -20,16 +20,15 @@ export default function PrivacyBanner() {
               Privacy-First Architecture
             </span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
-            Your Data? We Don&apos;t Want It 🙅‍♂️
+          <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-gray-900 mb-3">
+            Privacy by Design
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Real talk: We literally don&apos;t store your resume data. Not because we&apos;re saints,
-            but because we don&apos;t have that kind of storage budget. Your privacy is secure by poverty. 😅
+            Resume files are processed in-memory for analysis and are not stored after processing.
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -38,9 +37,9 @@ export default function PrivacyBanner() {
             className="bg-white rounded-xl p-6 shadow-sm border border-gray-200"
           >
             <Database className="w-8 h-8 text-gray-800 mb-3" />
-            <h3 className="font-bold text-gray-900 mb-2">No Database</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">No Persistent Resume Storage</h3>
             <p className="text-sm text-gray-600">
-              Zero databases = zero data breaches. It&apos;s called &quot;serverless security&quot; (and being frugal) 💰
+              Resume content is not written to a long-term data store.
             </p>
           </motion.div>
 
@@ -52,9 +51,9 @@ export default function PrivacyBanner() {
             className="bg-white rounded-xl p-6 shadow-sm border border-gray-200"
           >
             <Lock className="w-8 h-8 text-gray-800 mb-3" />
-            <h3 className="font-bold text-gray-900 mb-2">Stateless API</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Stateless API</h3>
             <p className="text-sm text-gray-600">
-              Each request is a fresh start. Your resume goes in, analysis comes out, nothing stays behind. Clean AF. ✨
+              Each request is handled independently with no persistent session data.
             </p>
           </motion.div>
 
@@ -66,9 +65,9 @@ export default function PrivacyBanner() {
             className="bg-white rounded-xl p-6 shadow-sm border border-gray-200"
           >
             <Trash2 className="w-8 h-8 text-gray-800 mb-3" />
-            <h3 className="font-bold text-gray-900 mb-2">Auto-Purged</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Automatic Cleanup</h3>
             <p className="text-sm text-gray-600">
-              Your file gets analyzed and immediately yeeted into the void. We couldn&apos;t recover it even if we tried. 🗑️
+              Temporary processing artifacts are removed immediately after analysis.
             </p>
           </motion.div>
 
@@ -80,9 +79,9 @@ export default function PrivacyBanner() {
             className="bg-white rounded-xl p-6 shadow-sm border border-gray-200"
           >
             <Code className="w-8 h-8 text-gray-800 mb-3" />
-            <h3 className="font-bold text-gray-900 mb-2">100% Open Source</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Open Source</h3>
             <p className="text-sm text-gray-600">
-              Don&apos;t trust us? Check the code yourself. We&apos;re transparent like freshly cleaned glass. 🔍
+              Review the implementation publicly to verify data handling behavior.
             </p>
           </motion.div>
         </div>

@@ -129,11 +129,11 @@ export default function UploadSection({ onAnalyze, error }: UploadSectionProps) 
                   exit={{ opacity: 0, scale: 0.9 }}
                   className="flex flex-col items-center"
                 >
-                  <div className="w-16 h-16 bg-gray-200 rounded-2xl flex items-center justify-center mb-4">
+                  <div className="w-16 h-16 bg-gray-200 rounded-2xl border border-gray-300/70 flex items-center justify-center mb-4">
                     <CheckCircle2 className="w-8 h-8 text-gray-800" />
                   </div>
                   <div className="flex items-center gap-3 mb-2">
-                    <FileText className="w-5 h-5 text-gray-500" />
+                    <FileText className="w-5 h-5 text-gray-600" />
                     <span className="font-medium text-gray-900">{file.name}</span>
                     <button
                       onClick={(e) => {
@@ -192,7 +192,7 @@ export default function UploadSection({ onAnalyze, error }: UploadSectionProps) 
                 exit={{ opacity: 0, y: 10 }}
                 className="mt-6 text-center"
               >
-                <button onClick={handleAnalyze} className="btn-primary text-lg px-10 py-4">
+                <button onClick={handleAnalyze} className="btn-primary btn-hero px-10">
                   Analyze Resume
                 </button>
               </motion.div>

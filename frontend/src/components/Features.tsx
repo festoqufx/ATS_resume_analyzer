@@ -88,7 +88,7 @@ export default function Features() {
           </h2>
           <p className="section-subtitle max-w-2xl mx-auto">
             Our AI-powered analyzer examines every aspect of your resume to
-            provide recruiter-level insights. Blazingly fast, ridiculously accurate. ⚡
+            provide recruiter-level insights with consistent, reliable scoring.
           </p>
           {/* Tech Stack Badge */}
           <div className="flex flex-wrap justify-center gap-2 mt-4">
@@ -115,7 +115,7 @@ export default function Features() {
               >
                 <feature.icon className={`w-6 h-6 ${feature.color}`} />
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
                 {feature.title}
               </h3>
               <p className="text-sm text-gray-600">{feature.description}</p>

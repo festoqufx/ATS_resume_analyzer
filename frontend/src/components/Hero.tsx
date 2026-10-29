@@ -33,7 +33,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight font-display text-gray-900 mb-7 leading-[1.05]"
+            className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight font-display text-gray-900 mb-7 leading-[1.05]"
           >
             See Your Resume Through
             <br />
@@ -59,7 +59,7 @@ export default function Hero() {
           >
             <a
               href="#upload"
-              className="btn-primary text-lg px-8 py-4 inline-flex items-center gap-2 group"
+              className="btn-primary btn-hero inline-flex items-center gap-2 group"
             >
               Analyze Your Resume
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -78,11 +78,11 @@ export default function Hero() {
           >
             <div className="flex items-center gap-2 text-gray-600">
               <CheckCircle2 className="w-5 h-5 text-gray-700" />
-              <span className="text-sm font-medium">Blazingly Fast ⚡</span>
+              <span className="text-sm font-medium">Fast Analysis</span>
             </div>
             <div className="flex items-center gap-2 text-gray-600">
               <Shield className="w-5 h-5 text-gray-700" />
-              <span className="text-sm font-medium">Zero Data Stored 🔒</span>
+              <span className="text-sm font-medium">Zero Data Storage</span>
             </div>
             <div className="flex items-center gap-2 text-gray-600">
               <Zap className="w-5 h-5 text-gray-700" />
@@ -90,7 +90,7 @@ export default function Hero() {
             </div>
           </motion.div>
 
-          {/* Privacy Badge - Humorous */}
+          {/* Privacy Badge */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -99,7 +99,7 @@ export default function Hero() {
           >
             <Shield className="w-4 h-4 text-gray-700" />
             <span className="text-sm text-gray-700 font-medium">
-              Your data? We literally can&apos;t afford the storage to keep it 😅
+              Your resume is processed transiently and not retained.
             </span>
           </motion.div>
         </div>
